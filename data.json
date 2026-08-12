@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "passwordHash": "$2a$10$cFRWvH8HfFbW807IsAivHuXRG4T/uSbLD55xNWpweT/wCAwuh8kbe"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "rojina-bd",
+      "description": "party didaina :(",
+      "date": "2026-07-25",
+      "time": "1:20",
+      "location": "narantar"
+    },
+    {
+      "id": 2,
+      "name": "shadi",
+      "description": "shadi me jarur aana",
+      "date": "2036-12-11",
+      "time": "11:30",
+      "location": "mhenpi"
+    }
+  ],
+  "attendees": [
+    {
+      "id": 1,
+      "name": "cupid",
+      "email": "dsiajda@gmail.com",
+      "phone": "89273"
+    },
+    {
+      "id": 2,
+      "name": "adit",
+      "email": "sdad@gmail.com",
+      "phone": "23891371"
+    },
+    {
+      "id": 3,
+      "name": "anish",
+      "email": "dajsd@gmail.com",
+      "phone": "920312"
+    },
+    {
+      "id": 4,
+      "name": "rajib",
+      "email": "fytvb@test.com",
+      "phone": "9867847354"
+    },
+    {
+      "id": 5,
+      "name": "rojina",
+      "email": "rojibaufcuyiftcfoucgvoygibk@bguvvgj.com",
+      "phone": "9876543298"
+    }
+  ],
+  "registrations": [
+    {
+      "eventId": 1,
+      "attendeeId": 2
+    },
+    {
+      "eventId": 1,
+      "attendeeId": 3
+    },
+    {
+      "eventId": 1,
+      "attendeeId": 1
+    },
+    {
+      "eventId": 1,
+      "attendeeId": 4
+    },
+    {
+      "eventId": 2,
+      "attendeeId": 2
+    },
+    {
+      "eventId": 2,
+      "attendeeId": 3
+    },
+    {
+      "eventId": 2,
+      "attendeeId": 1
+    },
+    {
+      "eventId": 2,
+      "attendeeId": 4
+    },
+    {
+      "eventId": 2,
+      "attendeeId": 5
+    },
+    {
+      "eventId": 1,
+      "attendeeId": 5
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Event Details - Event Management System</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="topbar" id="topbar"></div>
+
+<div class="page">
+  <div class="page-header">
+    <div>
+      <h1 id="event-name">Loading...</h1>
+      <p><a href="events.html">&larr; Back to Events</a></p>
+    </div>
+    <a href="#" id="edit-link" class="btn btn-secondary">Edit</a>
+  </div>
+
+  <div id="message-box"></div>
+
+  <div class="detail-box">
+    <dl>
+      <dt>Description</dt><dd id="event-description">-</dd>
+      <dt>Date</dt><dd id="event-date">-</dd>
+      <dt>Time</dt><dd id="event-time">-</dd>
+      <dt>Location</dt><dd id="event-location">-</dd>
+    </dl>
+  </div>
+
+  <h3 class="section-title">Registered Attendees</h3>
+
+  <div class="register-row">
+    <select id="attendee-select"></select>
+    <button class="btn" id="register-btn">Register</button>
+  </div>
+
+  <table>
+    <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th></th></tr></thead>
+    <tbody id="rows">
+      <tr class="empty"><td colspan="4">Loading...</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="api.js"></script>
+<script src="event-view.js"></script>
+
+</body>
+</html>

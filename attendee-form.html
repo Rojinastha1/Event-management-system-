@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Attendee Form - Event Management System</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="topbar" id="topbar"></div>
+
+<div class="page">
+  <div class="page-header">
+    <div>
+      <h1 id="form-title">Add Attendee</h1>
+      <p><a href="attendees.html">&larr; Back to Attendees</a></p>
+    </div>
+  </div>
+
+  <div id="message-box"></div>
+
+  <div class="card">
+    <form id="attendee-form">
+      <div class="field">
+        <label for="name">Name *</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="field">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" required />
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn" id="save-btn">Save Attendee</button>
+        <a href="attendees.html" class="btn btn-secondary">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="api.js"></script>
+<script src="attendee-form.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Event Form - Event Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="topbar" id="topbar"></div>
+
+<div class="page">
+  <div class="page-header">
+    <div>
+      <p class="eyebrow">Ledger &middot; New entry</p>
+      <h1 id="form-title">Add Event</h1>
+      <p><a href="events.html">&larr; Back to Events</a></p>
+    </div>
+  </div>
+
+  <div id="message-box"></div>
+
+  <div class="card">
+    <form id="event-form">
+      <div class="field">
+        <label for="name">Event Name *</label>
+        <input type="text" id="name" required />
+      </div>
+      <div class="field">
+        <label for="description">Description</label>
+        <textarea id="description"></textarea>
+      </div>
+      <div class="field">
+        <label for="date">Date *</label>
+        <input type="text" id="date" placeholder="e.g. 2024-05-01 or May 1, 2024" required />
+      </div>
+      <div class="field">
+        <label for="time">Time *</label>
+        <input type="text" id="time" placeholder="e.g. 14:30 or 2:30 PM" required />
+      </div>
+      <div class="field">
+        <label for="location">Location *</label>
+        <input type="text" id="location" required />
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn" id="save-btn">Save Event</button>
+        <a href="events.html" class="btn btn-secondary">Cancel</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="api.js"></script>
+<script src="event-form.js"></script>
+
+</body>
+</html>

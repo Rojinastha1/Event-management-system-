@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Event Details - Event Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="topbar" id="topbar"></div>
+
+<div class="page">
+  <div class="page-header">
+    <div>
+      <p class="eyebrow">Ledger &middot; Event detail</p>
+      <h1 id="event-name">Loading...</h1>
+      <p><a href="events.html">&larr; Back to Events</a></p>
+    </div>
+    <a href="#" id="edit-link" class="btn btn-secondary">Edit</a>
+  </div>
+
+  <div id="message-box"></div>
+
+  <div class="detail-box">
+    <dl>
+      <dt>Description</dt><dd id="event-description">-</dd>
+      <dt>Date</dt><dd id="event-date">-</dd>
+      <dt>Time</dt><dd id="event-time">-</dd>
+      <dt>Location</dt><dd id="event-location">-</dd>
+    </dl>
+  </div>
+
+  <h3 class="section-title">Registered Attendees</h3>
+
+  <div class="register-row">
+    <select id="attendee-select"></select>
+    <button class="btn" id="register-btn">Register</button>
+  </div>
+
+  <table>
+    <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th></th></tr></thead>
+    <tbody id="rows">
+      <tr class="empty"><td colspan="4">Loading...</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="api.js"></script>
+<script src="event-view.js"></script>
+
+</body>
+</html>

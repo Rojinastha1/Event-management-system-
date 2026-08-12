@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Events - Event Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="topbar" id="topbar"></div>
+
+<div class="page">
+  <div class="page-header">
+    <div>
+      <p class="eyebrow">Ledger &middot; Events</p>
+      <h1>Events</h1>
+      <p class="lede">Every gathering on the books.</p>
+    </div>
+    <a href="event-form.html" class="btn">+ Add Event</a>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search events by name..." />
+  </div>
+
+  <div id="message-box"></div>
+
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Date</th><th>Location</th><th>Attendees</th><th></th></tr>
+    </thead>
+    <tbody id="rows">
+      <tr class="empty"><td colspan="5">Loading...</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="api.js"></script>
+<script src="events.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Log In - Event Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body class="auth-body">
+
+<div class="login-wrap">
+  <div class="login-card">
+    <div class="login-mark">EMS</div>
+    <h1>Event Ledger</h1>
+    <p class="hint">Sign in to manage your events and attendees.</p>
+    <div id="message-box"></div>
+
+    <form id="login-form">
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" required autocomplete="username" />
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" required autocomplete="current-password" />
+      </div>
+      <button type="submit" class="btn">Log in</button>
+    </form>
+
+    <p class="switch-line">New here? <a href="signup.html">Create an account</a></p>
+  </div>
+</div>
+
+<script src="api.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>
